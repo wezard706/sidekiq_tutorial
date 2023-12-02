@@ -1,7 +1,7 @@
 class HardJob
   include Sidekiq::Job
 
-  def perform(*args)
-    # Do something
+  def perform(message)
+    p message
   end
 end
